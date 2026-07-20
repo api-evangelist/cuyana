@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.cuyana.com/.well-known/openid-configuration
+docs: https://shopify.dev/docs/api/customer
+notes: >-
+  Auth surface is Shopify Customer Account OAuth 2.0 / OpenID Connect, discovered via the
+  OIDC + RFC 8414 documents served on cuyana.com. Issuer is Shopify
+  (https://shopify.com/authentication/71250542907); token/authorization endpoints are hosted
+  at account.cuyana.com. This governs customer login and the Customer Account API (including
+  the customer-account-mcp-api scope). PKCE (S256) supported; client auth via client_secret_basic.
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode]
+  pkce: S256
+  token_endpoint_auth_methods: [client_secret_basic]
+schemes:
+- name: ShopifyCustomerAccountOAuth
+  type: oauth2
+  flow: authorizationCode
+  issuer: https://shopify.com/authentication/71250542907
+  authorizationUrl: https://account.cuyana.com/authentication/oauth/authorize
+  tokenUrl: https://account.cuyana.com/authentication/oauth/token
+  endSessionUrl: https://account.cuyana.com/authentication/logout
+  jwksUri: https://account.cuyana.com/authentication/.well-known/jwks.json
+  responseTypes: [code]
+  grantTypes:
+  - authorization_code
+  - refresh_token
+  - urn:ietf:params:oauth:grant-type:jwt-bearer
+  idTokenSigningAlg: RS256
+  sources: [well-known/cuyana-openid-configuration.json]
