@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://www.cuyana.com/api/mcp
+notes: >-
+  Live Shopify Storefront MCP server served on the Cuyana domain. Probed 2026-07-18 with a
+  JSON-RPC initialize + tools/list; responded with protocolVersion 2025-06-18 and 5 tools.
+  This is the standard Shopify-hosted Storefront MCP (serverInfo name "storefront-renderer"),
+  not a Cuyana-authored server, but it is genuinely reachable and agent-usable at this URL.
+  Tools implement the UCP (Universal Commerce Protocol) catalog/cart capabilities.
+server:
+  name: storefront-renderer
+  version: 0.1.0
+  transport: http
+  url: https://www.cuyana.com/api/mcp
+  protocol_version: '2025-06-18'
+  capabilities:
+  - tools
+  - prompts
+  - resources
+  - logging
+tools:
+- name: search_catalog
+  description: Search for products from the online store, hosted on Shopify (natural-language query and/or filters; paginated via cursor). Conforms to UCP dev.ucp.shopping.catalog.search.
+- name: get_cart
+  description: Get the cart including items, shipping options, discount info, and checkout url for a given cart id.
+- name: update_cart
+  description: Add/remove/update line items, buyer information, shipping details, discount codes, gift cards, and notes in one consolidated call.
+- name: search_shop_policies_and_faqs
+  description: Get facts about the store's policies, products, or services.
+- name: get_product_details
+  description: Look up a product by ID; pass 'options' to select a specific variant for the product card.

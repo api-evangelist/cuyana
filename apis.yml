@@ -1,7 +1,16 @@
 aid: cuyana
 name: Cuyana
-description: Cuyana is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Cuyana is a San Francisco-based direct-to-consumer women's fashion brand founded in 2011 by
+  Karla Gallardo and Shilpa Shah, built on a "Fewer, Better Things" philosophy of timeless,
+  high-quality essentials — leather totes and handbags, small leather goods, and apparel —
+  crafted from sustainable, Leather Working Group (LWG) certified materials through ethical
+  manufacturing partnerships. The brand runs an omnichannel direct-to-consumer business across
+  its e-commerce store and a growing fleet of retail locations. Cuyana's storefront runs on
+  Shopify, which exposes agent-facing surfaces on the cuyana.com domain: a live hosted Storefront
+  MCP server at /api/mcp for AI shopping agents (search_catalog, get_cart, update_cart,
+  get_product_details, search_shop_policies_and_faqs), and Shopify Customer Account OAuth/OIDC
+  discovery documents under /.well-known/. Cuyana is backed by Canaan Partners.
 url: https://raw.githubusercontent.com/api-evangelist/cuyana/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +18,63 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fashion
+- Retail
+- E-commerce
+- Direct-to-Consumer
+- Apparel
+- Leather Goods
+- Sustainable Fashion
+- Shopify
+image: https://cdn.shopify.com/s/files/1/0712/5054/2907/files/BagsPLP_3.webp?v=1715724617
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/cuyana-domain-security.yml
+- type: Website
+  url: https://www.cuyana.com/
+- type: Support
+  url: https://support.cuyana.com/hc/en-us
+- type: Blog
+  url: https://cuyana.com/blogs/news
+- type: Login
+  url: https://account.cuyana.com/
+- type: TermsOfService
+  url: https://cuyana.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://cuyana.com/policies/privacy-policy
+- type: WellKnown
+  url: well-known/cuyana-well-known.yml
+- type: MCPServer
+  url: mcp/cuyana-mcp.yml
+- type: Authentication
+  url: authentication/cuyana-authentication.yml
+- type: OAuthScopes
+  url: scopes/cuyana-scopes.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

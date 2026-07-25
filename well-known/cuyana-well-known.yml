@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.cuyana.com/.well-known/
+host: https://www.cuyana.com
+notes: >-
+  Cuyana runs on Shopify. The OAuth/OIDC discovery documents are Shopify Customer Account
+  (customer login) endpoints served on the cuyana.com domain; issuer is Shopify. No
+  /.well-known/security.txt, api-catalog, or ai-plugin.json is published (site returns
+  redirects/404 for those).
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: cuyana-openid-configuration.json
+  spec: OpenID Connect Discovery 1.0
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: cuyana-oauth-authorization-server.json
+  spec: RFC 8414
+- path: /.well-known/security.txt
+  status: 301
+- path: /.well-known/api-catalog
+  status: 301
+- path: /.well-known/ai-plugin.json
+  status: 301
