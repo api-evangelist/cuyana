@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cuyana is a company surfaced as a portfolio company of canaan-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Cuyana is a San Francisco-based direct-to-consumer women's fashion brand founded in 2011 by Karla Gallardo and Shilpa Shah, built on a "Fewer, Better Things" philosophy of timeless, high-quality essentials — leather totes and handbags, small leather goods, and apparel — crafted from sustainable, Leather Working Group (LWG) certified materials through ethical manufacturing partnerships. The brand runs an omnichannel direct-to-consumer business across its e-commerce store and a growing fleet of retail locations. Cuyana's storefront runs on Shopify, which exposes agent-facing surfaces on the cuyana.com domain: a live hosted Storefront MCP server at /api/mcp for AI shopping agents (search_catalog, get_cart, update_cart, get_product_details, search_shop_policies_and_faqs), and Shopify Customer Account OAuth/OIDC discovery documents under /.well-known/. Cuyana is backed by Canaan Partners.
 
-Backed by: canaan-partners
+**Areas:** Company · Fashion · Retail · E-Commerce · Direct to Consumer · Apparel · Leather Goods · Sustainable Fashion · Shopify
+
+## Cuyana on APIs.io
+
+Everything profiled for Cuyana is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cuyana/](https://apis.io/providers/cuyana/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [storefront-renderer](https://apis.io/servers/cuyana/storefront-renderer/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cuyana Authentication](https://apis.io/security/cuyana/cuyana-authentication/)
+- [Cuyana Domain Security](https://apis.io/security/cuyana/cuyana-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Cuyana Scopes](https://apis.io/scopes/cuyana/cuyana-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cuyana.com/)
+- [Support](https://support.cuyana.com/hc/en-us)
+- [Blog](https://cuyana.com/blogs/news)
+- [Terms of service](https://cuyana.com/policies/terms-of-service)
+- [Privacy policy](https://cuyana.com/policies/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 16.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 51.7 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 27.6 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cuyana/](https://apis.io/providers/cuyana/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cuyana: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cuyana/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
